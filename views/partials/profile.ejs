@@ -1,0 +1,54 @@
+<style>
+    .profile{
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top: 5em;
+    height: 5.5em; /* Same height as pic */
+    width: 100%;
+    }
+
+    .profile::before {
+        position: absolute;
+        content: '';
+        
+        bottom: 0px;
+        height: 50%;
+        width: 100%;
+
+        background-color: var(--theBelow);
+        z-index: -1;
+    }
+
+    .profile > .pic {
+        height: 5.5em;
+        aspect-ratio: 1/1;
+        margin-right: 1.5em;
+        
+        margin-left: 5%;
+        border: 1px solid var(--text-color);
+        border-radius: 50%;
+    }
+
+    .username { font-weight: 500; font-size: 1.5em; }
+    .id { opacity: .5; font-size: .8em; }
+    .title {
+        font-style: italic;
+        font-size: .8em;
+        
+        margin-top: .2em;
+    }
+</style>
+
+<div class="profile">
+    <img src="src/4.png" alt="" class="pic">
+    
+    <div class="info">
+        <span class="username">Barbie Asiática</span>
+        <span class="id">#4002</span>
+        <p class="title">Explendor Hortícola</p>
+    </div>
+</div>
