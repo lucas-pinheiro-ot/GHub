@@ -1,0 +1,59 @@
+<style>
+    .crudArea{
+        display: flex;
+        justify-content: center;
+        
+        width: 90%;
+        padding: 5%;
+        height: 50em;
+        background-color: var(--theBelow);
+    }
+
+    .crudArea > p {
+        font-size: 1.3em3;
+    }
+
+    .crudList {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .item {
+        padding: 2%;
+        margin: 1em;
+        
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.047);
+        background-color: var(--background);
+
+        transition: all linear .2s;
+    }
+    .item:hover {
+        filter: brightness(1.2);
+    }
+    .item > button {
+        all: unset;
+        float: right;
+        margin-left: 1em;
+    }
+</style>
+
+<div class="crudArea">
+
+    <div class="crudList">
+        <div class="crudHeader">
+            
+        </div>
+
+        <div class="item">
+            <span>Entry#001</span>
+            <button>✖</button>
+            <button>✎</button>
+        </div>
+        <div class="item">
+            <span>Entry#002</span>
+            <button>✖</button>
+            <button>✎</button>
+        </div>
+    </div>
+</div>

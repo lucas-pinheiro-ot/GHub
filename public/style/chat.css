@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(18, 17, 19);
+}
+
+.uname {
+    margin: .2em;
+}
+.content {
+    margin: 0;
+    padding: .5em 2em;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+}

@@ -1,4 +1,4 @@
-// src/routes/userRoutes.js
+const path = require('path');
 
 const express = require('express');
 
@@ -9,8 +9,12 @@ router.get('/', (req, res) => {
 });
 
 router.get('/login', (req, res) => {
-    res.sendFile(__dirname + '/public/login/index.html');
-});  
+    res.render('login');
+});
+
+router.get('/room', (req, res) => {
+    res.render('room');
+});
 
 
 module.exports = router;
